@@ -9,12 +9,6 @@ main {
 	min-height: 100% !important;
 }
 
-nav.navbar li.nav-item.active > a.nav-link {
-	pointer-events: none;
-	cursor: default;
-	text-decoration: none;
-}
-
 .display-none {
 	display: none;
 }
