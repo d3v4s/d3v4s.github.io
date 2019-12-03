@@ -1,13 +1,94 @@
 @charset "UTF-8";
 
+/* FONTS */
+
+@font-face {
+	  font-family: 'BebasNeue';
+	  font-style: normal;
+	  font-weight: normal;
+	  font-display: auto;
+	  src: url("fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	  font-family: 'Alatsi';
+	  font-style: normal;
+	  font-weight: normal;
+	  font-display: auto;
+	  src: url("fonts/Alatsi-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	  font-family: 'Ubuntu';
+	  font-style: normal;
+	  font-weight: normal;
+	  font-display: auto;
+	  src: url("fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+
+/* CLASS FOR FONTS */
+
+.font-bebas {
+	font-family: BebasNeue
+}
+
+.font-alatsi {
+	font-family: Alatsi
+}
+
+.font-ubuntu {
+	font-family: Ubuntu
+}
+
+/* html and body full page */
 html, body {
   height: 100%;
   margin: 0;
 }
 
+/* main on full page */
 main {
 	min-height: 100% !important;
 }
+
+/* set dark theme */
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #1c1c1c !important;
+		color: #17a2b8 !important;
+		
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #fd7e14;
+	}
+
+	hr {
+		display: block;
+		height: 1px;
+    	border: 0;
+    	border-top: 1px solid #6c757d;
+		margin: 1em 0;
+		padding: 0;
+	}
+
+	input, textarea {
+		background: #6c757d !important;
+		color: #20c997 !important;
+	}
+
+	input::placeholder {
+		color: #20c997 !important;
+		opacity: .8 !important;
+	}
+
+	tbody, thead, tfoot {
+		color: #fd7e14;
+	}
+}
+
+/* CLASSES */
 
 .display-none {
 	display: none;
@@ -15,6 +96,14 @@ main {
 
 .text-red {
 	color: #dc3545;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-big {
+	font-size: 5.5em;
 }
 
 .link-danger {
@@ -57,39 +146,4 @@ a:hover {
 
 .over-top {
 	top: -100px;
-}
-
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: #1c1c1c !important;
-		color: #17a2b8 !important;
-		
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		color: #fd7e14;
-	}
-
-	hr {
-		display: block;
-		height: 1px;
-    	border: 0;
-    	border-top: 1px solid #6c757d;
-		margin: 1em 0;
-		padding: 0;
-	}
-
-	input, textarea {
-		background: #6c757d !important;
-		color: #20c997 !important;
-	}
-
-	input::placeholder {
-		color: #20c997 !important;
-		opacity: .8 !important;
-	}
-
-	tbody, thead, tfoot {
-		color: #fd7e14;
-	}
 }
