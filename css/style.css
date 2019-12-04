@@ -53,39 +53,37 @@ main {
 }
 
 /* set dark theme */
-@media (prefers-color-scheme: dark) {
-	body {
-		background-color: #1c1c1c !important;
-		color: #17a2b8 !important;
-		
-	}
+body {
+	background-color: #1c1c1c !important;
+	color: #17a2b8 !important;
+	
+}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #fd7e14;
-	}
+h1, h2, h3, h4, h5, h6 {
+	color: #fd7e14;
+}
 
-	hr {
-		display: block;
-		height: 1px;
-    	border: 0;
-    	border-top: 1px solid #6c757d;
-		margin: 1em 0;
-		padding: 0;
-	}
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #6c757d;
+	margin: 1em 0;
+	padding: 0;
+}
 
-	input, textarea {
-		background: #6c757d !important;
-		color: #20c997 !important;
-	}
+input, textarea {
+	background: #6c757d !important;
+	color: #20c997 !important;
+}
 
-	input::placeholder {
-		color: #20c997 !important;
-		opacity: .8 !important;
-	}
+input::placeholder {
+	color: #20c997 !important;
+	opacity: .8 !important;
+}
 
-	tbody, thead, tfoot {
-		color: #fd7e14;
-	}
+tbody, thead, tfoot {
+	color: #fd7e14;
 }
 
 /* CLASSES */
@@ -103,7 +101,7 @@ main {
 }
 
 .text-big {
-	font-size: 5.5em;
+	font-size: 3.2em;
 }
 
 .link-danger {
